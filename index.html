@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A la Conquête du Savoir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./logo .png">
+  <style>
+    :root {
+      --primary: #004aad;
+      --accent: #ff9f1c;
+      --bg-gradient: linear-gradient(135deg, #004aad, #ff9f1c);
+      --glass-bg: rgba(255, 255, 255, 0.15);
+      --glass-border: rgba(255, 255, 255, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-gradient);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: transparent;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      margin: auto;
+      display: block;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent);
+      color: #000;
+      font-weight: 900;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffb84d;
+    }
+
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .quiz {
+      max-width: 700px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .question {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .answer {
+      display: block;
+      background: #ffffff10;
+      border: 2px solid transparent;
+      margin: 0.5rem auto;
+      padding: 0.75rem;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      max-width: 300px;
+    }
+
+    .answer:hover {
+      border-color: var(--accent);
+      background: #ffffff20;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer {
+      background: #00000050;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ffffff30;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./logo .png" alt="Logo Scout">
+    <h1>À LA CONQUÊTE DU SAVOIR</h1>
+    <p>🤓Un jeu éducatif 100% fun. </p>
+    <p>🎓 Rejoins l'aventure !</p>
+    <p>Viens tester tes connaissances, t’amuser et remporter des super lots🎁</p>
+  </header>
+
+  <section class="hero">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXzohhHlvXlSZW0TeXvSgVEbV0AlEOzHfHPMy_IW3LPq2coQ/viewform?usp=sharing&ouid=107545782613787658488" target="_blank" class="cta-button">S'inscrire maintenant</a>
+    <img src="./Plan de travail 1.png" alt="Affiche du jeu">
+    
+  </section>
+
+  <section class="card">
+    <h2>À propos de l'événement</h2>
+    <p><strong>Dates :</strong> du 27 au 29 décembre 2025 à Lomé, Togo<br>
+    <strong>Participants :</strong> jeunes de 14 à 19 ans<br>
+    
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXzohhHlvXlSZW0TeXvSgVEbV0AlEOzHfHPMy_IW3LPq2coQ/viewform?usp=sharing&ouid=107545782613787658488" target="_blank" class="cta-button">Je m'inscris</a>
+  </section>
+
+  <section class="info-grid">
+    <div class="card">
+      <h2>Conditions de participation</h2>
+      <ul>
+        <li>Frais d'inscription : <strong>2000 FCFA</strong></li>
+        <li>Participation : <strong>8000 FCFA</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Lots à gagner</h2>
+      <ol>
+        <li><strong>🥇1er Prix</strong> : 50 000 FCFA + tenue scout</li>
+        <li><strong>🥈2e Prix</strong> : 30 000 FCFA + 1 lacoste AST</li>
+        <li><strong>🥉3e Prix</strong> : 15 000 FCFA</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>Contacts</h2>
+      <p>Téléphone : +228 9925 8206 / +228 9280 7076<br>
+      Email : <a href="mailto:alaconquetedusavoir@gmail.com" style="color: #fff; text-decoration: underline;">alaconquetedusavoir@gmail.com</a></p>
+    </div>
+  </section>
+
+  <div class="quiz">
+    <h2>Et ce n’est pas tout : encore plus de lots à gagner !🎁</h2>
+  </div>
+
+
+  <div class="footer">
+    &copy; 2025 | Contact : alaconquetedusavoir@gmail.com
+  </div>
+
+  <script>
+    function checkAnswer(button) {
+      const result = document.getElementById('result');
+      if (button.textContent === 'Lomé') {
+        result.textContent = '✅ Bonne réponse !';
+        result.style.color = 'lightgreen';
+      } else {
+        result.textContent = '❌ Mauvaise réponse.';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
