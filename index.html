@@ -144,6 +144,41 @@
       font-size: 0.9rem;
       border-top: 1px solid #ffffff30;
     }
+
+       /* --- SLIDER --- */
+    .slider-container {
+      max-width: 800px;
+      height: 710px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      width: 100%;
+      animation: slide 12s infinite; /* 3 images = 300% */
+    }
+
+    .slider img {
+      width: 100%;
+      height: :100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%    { transform: translateX(0%); }
+      20%   { transform: translateX(0%); }
+      25%   { transform: translateX(-100%); }
+      45%   { transform: translateX(-100%); }
+      50%   { transform: translateX(-200%); }
+      70%   { transform: translateX(-200%); }
+      75%   { transform: translateX(-300%); }
+      95%   { transform: translateX(-300%); }
+      100%  { transform: translateX(0%); }
+    }
   </style>
 </head>
 <body>
@@ -161,6 +196,19 @@
   <section class="card">
     <img src="./Plan de travail 1.png" alt="Affiche du jeu">
 
+  </section>
+
+  <!-- SLIDER SECTION -->
+  <section class="slider-container">
+    <div class="slider">
+      <img src="./Plan de travail 1.png" alt="Image 1">
+      <img src="./1.jpeg" alt="Image 1">
+      <img src="./2.jpeg" alt="Image 2">
+      <img src="./3.jpeg" alt="Image 3">
+      <img src="./4.jpeg" alt="Image 4">
+      <img src="./5.jpeg" alt="Image 5">
+      <img src="./6.jpeg" alt="Image 6">
+    </div>
   </section>
 
   <section class="card">
